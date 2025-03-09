@@ -1,0 +1,291 @@
+
+
+
+
+
+
+                        <!-- **********ignore this its for testing purposes********** -->
+
+
+
+
+
+<div class="hero-section">
+    <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary py-3 mx-auto">
+        <div class="container-fluid">
+          <img src="assets/logo.png" alt="" width="70px" height="60px" class="border-rounded">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav  navbar-nav-scroll text-dark" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Rating
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">5star</a></li>
+                  <li><a class="dropdown-item" href="#">4star</a></li>
+                  <li><a class="dropdown-item" href="#">3star</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+              <li class="nav-item pl-10">                
+              </li>
+            </ul>  
+          </div>
+        </div>
+      </nav> 
+      <div class="bg-content">
+        <h1>Find Skilled Professionals <br> For Your Project</h1>
+      </div>
+
+</div>
+<footer>
+    <div class="footer">
+       
+    </div>
+</footer>
+
+
+
+
+<form class="d-flex" role="search">
+  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+  <button class="btn btn-outline-success" type="submit">Search</button>
+</form>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Bar with Autocomplete</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 400px;
+            width: 100%;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            outline: none;
+        }
+
+        .autocomplete-list {
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background: #fff;
+            list-style: none;
+            padding: 0;
+            max-height: 150px;
+            overflow-y: auto;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .autocomplete-item {
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .autocomplete-item:hover {
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <input 
+            type="text" 
+            id="search" 
+            class="search-input" 
+            placeholder="Search..." 
+            oninput="handleInputChange()"
+        />
+        <ul id="autocomplete-list" class="autocomplete-list"></ul>
+    </div>
+
+    <script>
+        const allSuggestions = [
+            "Apple",
+            "Banana",
+            "Cherry",
+            "Date",
+            "Elderberry",
+            "Fig",
+            "Grape",
+            "Honeydew"
+        ];
+
+        function handleInputChange() {
+            const query = document.getElementById('search').value.toLowerCase();
+            const autocompleteList = document.getElementById('autocomplete-list');
+
+            // Clear existing suggestions
+            autocompleteList.innerHTML = '';
+
+            if (query) {
+                const filteredSuggestions = allSuggestions.filter(item =>
+                    item.toLowerCase().startsWith(query)
+                );
+
+                filteredSuggestions.forEach(suggestion => {
+                    const listItem = document.createElement('li');
+                    listItem.textContent = suggestion;
+                    listItem.className = 'autocomplete-item';
+                    listItem.onclick = () => handleSuggestionClick(suggestion);
+                    autocompleteList.appendChild(listItem);
+                });
+            }
+        }
+
+        function handleSuggestionClick(suggestion) {
+            document.getElementById('search').value = suggestion;
+            document.getElementById('autocomplete-list').innerHTML = '';
+        }
+    </script>
+</body>
+</html>
+
+
+<div class="search-box">
+  <div class="search-container">
+      <input 
+          type="text" 
+          id="search" 
+          class="search-input" 
+          placeholder="What skill are you looking for?" 
+          oninput="handleInputChange()"
+      />
+      <ul id="autocomplete-list" class="autocomplete-list"></ul>
+  </div>
+  <button class="search-button" onclick="handleSearch()">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" width="20" height="20">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35m1.35-6.15a7.5 7.5 0 11-15 0 7.5 7.5 0 0115 0z" />
+      </svg>
+      Search
+  </button>
+</div>
+</div>
+
+.search-box{
+  margin-left: 550px;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  outline: none;
+}
+
+.autocomplete-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin-top: 5px;
+  border: 0;
+  border-radius: 8px;
+  background: #fff;
+  list-style: none;
+  padding: 0;
+  max-height: 150px;
+  overflow-y: auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.autocomplete-item {
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.autocomplete-item:hover {
+  background-color: #f3f4f6;
+}
+
+.autocomplete-item a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  width: 100%;
+}
+
+
+.why-header h1{
+  padding: 50px 0;
+ text-align: center;
+ font-weight: 600;
+}
+.why-us {
+display: flex;
+justify-content: space-between;
+gap: 20px;
+padding: 50px 10%;
+background-color: #0066cc;
+text-align: center;
+margin: 100px;
+border-radius: 30px;
+height: 400px;
+}
+.why-us h1{
+text-align: center;
+}
+.why-us .column {
+flex: 1;
+padding: 20px;
+background: #0066cc;
+border-radius: 8px;
+box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+transition: transform 0.3s ease-in-out;
+}
+
+.why-us .column:hover {
+transform: translateY(-5px);
+}
+
+.why-us h2 {
+font-size: 1.5rem;
+color: #ffff;
+margin-bottom: 10px;
+}
+
+.why-us p {
+font-size: 1rem;
+color: #fff;
+}

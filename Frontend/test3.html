@@ -1,0 +1,180 @@
+
+
+
+
+
+
+                        <!-- **********ignore this its for testing purposes********** -->
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Bar with Autocomplete</title>
+    <style>
+        .bg-ontent {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            max-width: 600px;
+            width: 100%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+        }
+
+        .search-container {
+            display: flex;
+            flex-grow: 1;
+            position: relative;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 12px 16px;
+            border: 1px solid #d1d5db;
+            border-radius: 8px 0 0 8px;
+            font-size: 16px;
+            outline: none;
+        }
+
+        .search-button {
+            padding: 12px 20px;
+            background-color: #2563eb;
+            border: none;
+            border-radius: 0 8px 8px 0;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .search-button:hover {
+            background-color: #1d4ed8;
+        }
+
+        .search-button svg {
+            margin-right: 5px;
+        }
+
+        .autocomplete-list {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            margin-top: 5px;
+            border: 1px solid #d1d5db;
+            border-radius: 8px;
+            background: #fff;
+            list-style: none;
+            padding: 0;
+            max-height: 150px;
+            overflow-y: auto;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            z-index: 10;
+        }
+
+        .autocomplete-item {
+            padding: 10px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .autocomplete-item:hover {
+            background-color: #f3f4f6;
+        }
+
+        .autocomplete-item a {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="search-container">
+            <input 
+                type="text" 
+                id="search" 
+                class="search-input" 
+                placeholder="What skill are you looking for?" 
+                oninput="handleInputChange()"
+            />
+            <ul id="autocomplete-list" class="autocomplete-list"></ul>
+        </div>
+        <button class="search-button" onclick="handleSearch()">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" width="20" height="20">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35m1.35-6.15a7.5 7.5 0 11-15 0 7.5 7.5 0 0115 0z" />
+            </svg>
+            Search
+        </button>
+    </div>
+
+    <script>
+        const allSuggestions = {
+            "Apple": "index.html",
+            "Banana": "banana.html",
+            "Cherry": "cherry.html",
+            "Date": "date.html",
+            "Elderberry": "elderberry.html",
+            "Fig": "fig.html",
+            "Grape": "grape.html",
+            "Honeydew": "honeydew.html"
+        };
+
+        function handleInputChange() {
+            const query = document.getElementById('search').value.toLowerCase();
+            const autocompleteList = document.getElementById('autocomplete-list');
+
+            // Clear existing suggestions
+            autocompleteList.innerHTML = '';
+
+            if (query) {
+                const filteredSuggestions = Object.keys(allSuggestions).filter(item =>
+                    item.toLowerCase().startsWith(query)
+                );
+
+                filteredSuggestions.forEach(suggestion => {
+                    const listItem = document.createElement('li');
+                    listItem.className = 'autocomplete-item';
+                    const link = document.createElement('a');
+                    link.href = allSuggestions[suggestion];
+                    link.textContent = suggestion;
+                    listItem.appendChild(link);
+                    autocompleteList.appendChild(listItem);
+                });
+            }
+        }
+
+        function handleSearch() {
+            const query = document.getElementById('search').value;
+            if (query && allSuggestions[query]) {
+                window.location.href = allSuggestions[query];
+            } else {
+                alert('No matching page found');
+            }
+        }
+    </script>
+</body>
+</html> -->

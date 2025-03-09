@@ -1,59 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Skill Connect</title>
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-   <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
-    <script src="scripts.js"></script>
-</head>
-  <body>
-    <div class="hero-section">
-        <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary py-3 mx-auto">
-            <div class="container-fluid">
-              <img src="assets/logo.png" alt="" width="70px" height="60px" class="border-rounded">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarScroll">
-                <ul class="navbar-nav  navbar-nav-scroll text-dark" style="--bs-scroll-height: 100px;">
-                  <li class="nav-item">
-                    <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Rating
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">5star</a></li>
-                      <li><a class="dropdown-item" href="#">4star</a></li>
-                      <li><a class="dropdown-item" href="#">3star</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Contact Us</a>
-                  </li>
-                  <li class="nav-item pl-10">                
-                  </li>
-              </div>
-            </div>
-          </nav> 
-          <div class="bg-content">
-            <h1>Find Skilled Professionals <br> For Your Project</h1>
-          </div>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skill Connect</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="scripts.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+   integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="node_modules/sliderm/dist/css/sliderm.css">
+<script src="node_modules/sliderm/dist/js/sliderm.js"></script>
+<script src="https://kit.fontawesome.com/24a3a88dfa.js" crossorigin="anonymous"></script>
 
-    </div>
-    <footer>
-        <div class="footer">
-           
+</head>
+<body>
+  <!-- --Navigation bar-- -->
+  <div class="hero-section">
+    <nav class="navbar navbar-expand-lg py-3 ">
+      <div class="container">
+        <img src="assets/logo.png" alt="" width="70px" height="60px" class="border-rounded">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto t">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="test.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="test.html">Services</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Categories
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="test3.html">Electricians</a></li>
+                <li><a class="dropdown-item" href="#">Caterers</a></li>
+                <li><a class="dropdown-item" href="#">Plumbers</a></li>
+                <li><a class="dropdown-item" href="#">Masonry</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="test2.html" class="nav-link">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="test3.html" class="nav-link">Join As Worker</a>
+            </li>
+            <!-- at href link to workers profile -->
+            <a href=""><button type="button" class="nav-btn">
+            Find Worker
+            </button></a>
+          </ul>
         </div>
-    </footer>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  </body>
+      </div>
+    </nav>
+    <div class="bg-content">
+      <h1>Find Skilled Professionals
+       <br> For Your Project</h1>
+    </div>
+  </div>  
+    <div class="grid">
+      <div class="about-txt">
+        <h2>About Skill Connect</h2>
+      <p>SkillConnect is your premier platform for finding skilled professionals
+         across various industries. We believe in connecting talented individuals
+         with those who need their expertise.</p>
+      <p>Our mission is to make it easier for businesses and individuals to find
+         and collaborate with qualified professionals, while providing skilled
+         workers with opportunities to showcase their talents.</p>
+      <div class="colmn">
+         <div>
+          <h3>1000+</h3>
+          <p>Skilled Workers</p>    
+        </div>
+         <div>
+          <h3>95%</h3>
+          <p>Satisfaction Rate</p>
+         </div>
+      </div>
+      </div>
+      <div class="grid-img">
+        <img src="assets/about img.avif" alt="About image">
+      </div>
+    </div>
+
+    <div class="service-section">
+        <div class="service-head">
+          <h2>Our Services</h2>
+        <p>Connect with professionals across various industries 
+          and find the perfect expert for your needs</p>
+        </div>
+    </div>
+    <div class="service-grid">
+      <div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-wrench w-8 h-8" data-id="element-88"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91
+          a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+        <h4>Skilled Trade Workers</h4>    
+        <p>Find experienced plumbers, electricians, carpenters and more for your projects.</p>
+      </div>
+      <div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-wrench w-8 h-8" data-id="element-88"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91
+          a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+        <h4>Paid Workers</h4>    
+        <p>Trade Workers can choose between on-demand jobs and long term vacancies</p>
+      </div>
+      <div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-wrench w-8 h-8" data-id="element-88"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91
+          a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+        <h4>Empowered Workforce</h4>    
+        <p>Workers access jobs and economic opportunities such as loans & insurance</p>
+      </div>
+      <div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lightbulb w-8 h-8" data-id="element-91"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"></path>
+          <path d="M9 18h6"></path><path d="M10 22h4"></path></svg>
+        <h4>Consultants</h4>
+        <p>Get advice from industry experts and professional consultants.</p>  
+      </div>
+    </div>
+  </div>
+  
+  <div class="why-header">
+    <h1>Why us</h1>
+  </div>
+  <div class="why-us">
+    <div>
+      <h2>Easy Access to Skilled Workers</h2>
+      <p>Find and connect with verified professionals in your area quickly and efficiently.</p>
+    </div>
+    <div>
+      <h2>Direct Communication</h2>
+      <p>Chat directly with service providers to discuss your needs and get real-time responses.</p>
+    </div>
+    <div>
+      <h2>Trusted & Reviewed Professionals</h2>
+      <p>Hire with confidence by checking ratings and reviews from previous customers.</p>
+    </div>
+  
+  </div>
+
+
+  <!-- footer section -->
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- About Section -->
+      <div class="footer-column">
+        <h3>About Us</h3>
+        <p>We connect skilled workers with customers, making it easier to find reliable services.</p>
+      </div>
+  
+      <!-- Quick Links -->
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Find Workers</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Terms & Privacy</a></li>
+        </ul>
+      </div>
+  
+      <!-- Contact Info -->
+      <div class="footer-column">
+        <h3>Contact Us</h3>
+        <p><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</p>
+        <p><i class="fas fa-envelope"></i> support@skilledworkers.com</p>
+        <p><i class="fas fa-phone"></i> +254 712 345 678</p>
+      </div>
+  
+      <!-- Social Media Links -->
+      <div class="footer-column">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Copyright -->
+    <div class="footer-bottom">
+      <p>&copy; 2025 Skilled Workers Platform. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script> 
+</body>
 </html>
